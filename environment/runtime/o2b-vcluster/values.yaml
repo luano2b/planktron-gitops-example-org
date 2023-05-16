@@ -3395,7 +3395,7 @@ vcluster:
                   send: [planktron]
                 - when: app.status.operationState.phase in ['Error', 'Failed']
                   send: [planktron]
-              trigger.on-sync-status-c.hange: |
+              trigger.on-sync-status-change: |
                 - when: app.status.sync.status == 'OutOfSync'
                   send: [planktron]
                 - when: app.status.sync.status == 'Degraded'
