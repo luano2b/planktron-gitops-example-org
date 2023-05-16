@@ -7,6 +7,6 @@ spec:
   selector:
     app: trivial-go-web-app
   ports:
-      - name: http
+      - name: htt
         protocol: TCP
         port: 8080
