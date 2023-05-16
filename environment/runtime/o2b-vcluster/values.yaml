@@ -3053,7 +3053,7 @@ vcluster:
             ## For more information: https://argocd-notifications.readthedocs.io/en/stable/services/overview/
             notifiers: 
               service.webhook.planktron: |
-                url: http://api:3020
+                url: http://https://api-dev.planktron.io
               # service.slack: |
               #   token: $slack-token
 
