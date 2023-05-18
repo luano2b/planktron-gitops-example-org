@@ -30,14 +30,14 @@
 # spec:
 #   package: xpkg.upbound.io/upbound/provider-aws:v0.33.0
 
-# ---
-# apiVersion: pkg.crossplane.io/v1alpha1
-# kind: ControllerConfig
-# metadata:
-#   name: debug-config
-# spec:
-#   args:
-#     - --debug
+---
+apiVersion: pkg.crossplane.io/v1alpha1
+kind: ControllerConfig
+metadata:
+  name: debug-config
+spec:
+  args:
+    - --debug
 
 # ---
 # apiVersion: pkg.crossplane.io/v1
@@ -49,15 +49,15 @@
 #   controllerConfigRef:
 #     name: debug-config
 
-# ---
-# apiVersion: pkg.crossplane.io/v1
-# kind: Provider
-# metadata:
-#   name: provider-gcp
-# spec:
-#   package: xpkg.upbound.io/crossplane-contrib/provider-gcp:v0.22.0
-#   controllerConfigRef:
-#     name: debug-config
+---
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-gcp
+spec:
+  package: xpkg.upbound.io/crossplane-contrib/provider-gcp:v0.22.0
+  controllerConfigRef:
+    name: debug-config
 
 ---
 apiVersion: pkg.crossplane.io/v1
