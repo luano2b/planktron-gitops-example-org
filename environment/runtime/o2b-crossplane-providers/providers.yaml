@@ -49,7 +49,7 @@ kind: Provider
 metadata:
   name: provider-gcp
 spec:
-  package: xpkg.upbound.io/upbound/provider-gcp:v0.29.0
+  package: xpkg.upbound.io/upbound/provider-gcp:v0.32.0
   controllerConfigRef:
     name: debug-config
 
