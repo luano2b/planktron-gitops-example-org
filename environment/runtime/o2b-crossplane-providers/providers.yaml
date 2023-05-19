@@ -41,15 +41,15 @@ spec:
   args:
     - --debug
 
-# ---
-# apiVersion: pkg.crossplane.io/v1
-# kind: Provider
-# metadata:
-#   name: provider-gcp-upbound
-# spec:
-#   package: xpkg.upbound.io/upbound/provider-gcp:v0.29.0
-#   controllerConfigRef:
-#     name: debug-config
+---
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-gcp-upbound
+spec:
+  package: xpkg.upbound.io/upbound/provider-gcp:v0.29.0
+  controllerConfigRef:
+    name: debug-config
 
 # ---
 # apiVersion: pkg.crossplane.io/v1
