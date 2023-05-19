@@ -14,21 +14,21 @@
 # spec:
 #   package: xpkg.upbound.io/crossplane-contrib/provider-azure:v0.20.0
 
----
-apiVersion: pkg.crossplane.io/v1
-kind: Provider
-metadata:
-  name: provider-aws
-spec:
-  package: xpkg.upbound.io/crossplane-contrib/provider-aws:v0.38.0
-
 # ---
 # apiVersion: pkg.crossplane.io/v1
 # kind: Provider
 # metadata:
-#   name: provider-aws-upbound
+#   name: provider-aws
 # spec:
-#   package: xpkg.upbound.io/upbound/provider-aws:v0.33.0
+#   package: xpkg.upbound.io/crossplane-contrib/provider-aws:v0.38.0
+
+---
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-aws-upbound
+spec:
+  package: xpkg.upbound.io/upbound/provider-aws:v0.33.0
 
 ---
 apiVersion: pkg.crossplane.io/v1alpha1
@@ -39,25 +39,25 @@ spec:
   args:
     - --debug
 
-# ---
-# apiVersion: pkg.crossplane.io/v1
-# kind: Provider
-# metadata:
-#   name: provider-gcp-upbound
-# spec:
-#   package: xpkg.upbound.io/upbound/provider-gcp:v0.29.0
-#   controllerConfigRef:
-#     name: debug-config
-
 ---
 apiVersion: pkg.crossplane.io/v1
 kind: Provider
 metadata:
-  name: provider-gcp
+  name: provider-gcp-upbound
 spec:
-  package: xpkg.upbound.io/crossplane-contrib/provider-gcp:v0.22.0
+  package: xpkg.upbound.io/upbound/provider-gcp:v0.29.0
   controllerConfigRef:
     name: debug-config
+
+# ---
+# apiVersion: pkg.crossplane.io/v1
+# kind: Provider
+# metadata:
+#   name: provider-gcp
+# spec:
+#   package: xpkg.upbound.io/crossplane-contrib/provider-gcp:v0.22.0
+#   controllerConfigRef:
+#     name: debug-config
 
 ---
 apiVersion: pkg.crossplane.io/v1
