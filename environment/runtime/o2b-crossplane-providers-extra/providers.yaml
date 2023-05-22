@@ -1,0 +1,15 @@
+# ---
+# apiVersion: pkg.crossplane.io/v1
+# kind: Provider
+# metadata:
+#   name: provider-azure
+# spec:
+#   package: xpkg.upbound.io/upbound/provider-azure:v0.29.0
+
+---
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: provider-gcp
+spec:
+  package: xpkg.upbound.io/upbound/provider-gcp:v0.29.0
