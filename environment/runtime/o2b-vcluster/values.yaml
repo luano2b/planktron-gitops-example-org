@@ -184,10 +184,10 @@ vcluster:
     env: []
     resources:
       limits:
-        memory: 2Gi
+        memory: 3Gi
       requests:
-        cpu: 200m
-        memory: 256Mi
+        cpu: 400m
+        memory: 512Mi
 
   # Storage settings for the vcluster
   storage:
