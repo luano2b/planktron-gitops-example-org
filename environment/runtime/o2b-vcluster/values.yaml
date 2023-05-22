@@ -186,7 +186,7 @@ vcluster:
       limits:
         memory: 3Gi
       requests:
-        cpu: 400m
+        cpu: 600m
         memory: 512Mi
 
   # Storage settings for the vcluster
