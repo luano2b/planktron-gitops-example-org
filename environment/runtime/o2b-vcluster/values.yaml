@@ -30,11 +30,11 @@ vcluster:
     services:
       enabled: true
     configmaps:
-      enabled: true
-      all: false
+      enabled: false
+      all: true
     secrets:
-      all: false
-      enabled: true
+      all: true
+      enabled: false
     endpoints:
       enabled: true
     pods:
