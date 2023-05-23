@@ -98,12 +98,12 @@ vcluster:
       clusterRole: 
         extraRules:
           - apiGroups: ["pkg.crossplane.io"]
-            resources: ["*"]
+            resources: ["customresourcedefinitions"]
             verbs: ["get", "list", "watch"]
       role:
         extraRules:
           - apiGroups: ["pkg.crossplane.io"]
-            resources: ["*"]
+            resources: ["customresourcedefinitions"]
             verbs: ["get", "list", "watch"]
       config: |-
         version: v1beta1
