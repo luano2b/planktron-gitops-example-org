@@ -106,12 +106,12 @@ vcluster:
             resources: ["customresourcedefinitions"]
             verbs: ["get", "list", "watch"]
       config: |-
-        version: v1beta1
-        import:
-          - kind: Provider
-            apiVersion: pkg.crossplane.io/v1
-          - kind: ProviderRevision
-            apiVersion: pkg.crossplane.io/v1
+#         version: v1beta1
+#         import:
+#           - kind: Provider
+#             apiVersion: pkg.crossplane.io/v1
+#           - kind: ProviderRevision
+#             apiVersion: pkg.crossplane.io/v1
         ---
 
   # If enabled, will fallback to host dns for resolving domains. This
