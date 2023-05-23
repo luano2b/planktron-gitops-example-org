@@ -109,9 +109,9 @@ vcluster:
         version: v1beta1
         import:
           - kind: Provider
-            apiVersion: pkg.crossplane.io
+            apiVersion: pkg.crossplane.io/v1
           - kind: ProviderRevision
-            apiVersion: pkg.crossplane.io
+            apiVersion: pkg.crossplane.io/v1
         ---
 
   # If enabled, will fallback to host dns for resolving domains. This
