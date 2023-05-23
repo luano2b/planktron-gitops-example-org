@@ -2,6 +2,9 @@ vcluster:
   # These annotations will be applied to all objects created in this chart
   globalAnnotations: {}
 
+  multiNamespaceMode:
+    enabled: true
+  
   # If the control plane is deployed in high availability mode
   # Make sure to scale up the replicas and use an external datastore
   enableHA: false
@@ -92,7 +95,23 @@ vcluster:
       enabled: false
     # generic CRD configuration
     generic:
+      clusterRole: 
+        extraRules:
+          - apiGroups: ["pkg.crossplane.io"]
+            resources: ["*"]
+            verbs: ["get", "list", "watch"]
+      role:
+        extraRules:
+          - apiGroups: ["pkg.crossplane.io"]
+            resources: ["*"]
+            verbs: ["get", "list", "watch"]
       config: |-
+        version: v1beta1
+        import:
+          - kind: Provider
+            apiVersion: pkg.crossplane.io/v1
+          - kind: ProviderRevision
+            apiVersion: pkg.crossplane.io/v1
         ---
 
   # If enabled, will fallback to host dns for resolving domains. This
