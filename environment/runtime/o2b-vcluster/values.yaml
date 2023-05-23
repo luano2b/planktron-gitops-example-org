@@ -106,7 +106,7 @@ vcluster:
             resources: ["customresourcedefinitions"]
             verbs: ["get", "list", "watch"]
       config: |-
-        version: v1veta1
+        version: v1beta1
         import:
           - kind: Provider
             apiVersion: pkg.crossplane.io
