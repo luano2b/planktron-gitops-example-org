@@ -89,7 +89,7 @@ vcluster:
     poddisruptionbudgets:
       enabled: false
     serviceaccounts:
-      enabled: false
+      enabled: true
     # generic CRD configuration
     generic:
       config: |-
