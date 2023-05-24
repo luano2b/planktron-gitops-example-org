@@ -92,16 +92,16 @@ vcluster:
       enabled: false
     # generic CRD configuration
     generic:
-      clusterRole:
-        extraRules:
-          - apiGroups: ["*"]
-            resources: ["*"]
-            verbs: ["get", "list", "watch"]
+#       clusterRole:
+#         extraRules:
+#           - apiGroups: ["*"]
+#             resources: ["*"]
+#             verbs: ["get", "list", "watch"]
       config: |-
-        version: v1beta1
-        import:
-          - kind: Provider
-            apiVersion: pkg.crossplane.io
+#         version: v1beta1
+#         import:
+#           - kind: Provider
+#             apiVersion: pkg.crossplane.io
       ---
 
   # If enabled, will fallback to host dns for resolving domains. This
