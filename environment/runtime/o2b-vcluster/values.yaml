@@ -92,6 +92,11 @@ vcluster:
       enabled: false
     # generic CRD configuration
     generic:
+      clusterRole:
+        extraRules:
+          - apiGroups: ["pkg.crossplane.io"]
+            resources: ["customresourcedefinitions"]
+            verbs: ["get", "list", "watch"]
       config: |-
         version: v1beta1
         import:
