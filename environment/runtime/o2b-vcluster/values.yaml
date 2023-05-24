@@ -93,7 +93,7 @@ vcluster:
     # generic CRD configuration
     generic:
       config: |-
-      ---
+        ---
 
   # If enabled, will fallback to host dns for resolving domains. This
   # is useful if using istio or dapr in the host cluster and sidecar
