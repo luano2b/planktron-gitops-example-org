@@ -54,8 +54,8 @@ crossplane:
 
   resourcesCrossplane:
     limits:
-      cpu: 100m
-      memory: 512Mi
+      cpu: 1000m
+      memory: 1Gi
     requests:
       cpu: 100m
       memory: 256Mi
@@ -74,8 +74,8 @@ crossplane:
 
   resourcesRBACManager:
     limits:
-      cpu: 100m
-      memory: 512Mi
+      cpu: 1000m
+      memory: 1Gi
     requests:
       cpu: 100m
       memory: 256Mi
