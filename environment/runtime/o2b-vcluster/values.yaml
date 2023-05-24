@@ -7,7 +7,7 @@ vcluster:
   enableHA: false
   
   multiNamespaceMode:
-  enabled: true
+    enabled: true
 
   # DefaultImageRegistry will be prepended to all deployed vcluster images, such as the vcluster pod, coredns etc.. Deployed
   # images within the vcluster will not be rewritten.
