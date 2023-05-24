@@ -152,13 +152,13 @@ vcluster:
         readOnly: true
     resources:
       limits:
-        cpu: 1000m
-        memory: 512Mi
+        cpu: 2000m
+        memory: 1Gi
       requests:
         # ensure that cpu/memory requests are high enough.
         # for example gke wants minimum 10m/32Mi here!
-        cpu: 20m
-        memory: 64Mi
+        cpu: 40m
+        memory: 128Mi
     kubeConfigContextName: vcluster-7e0ce97f-437a-44dd-9414-1dee7300f0e6
     serviceAnnotations: {}
 
@@ -184,10 +184,10 @@ vcluster:
     env: []
     resources:
       limits:
-        memory: 3Gi
+        memory: 4Gi
       requests:
-        cpu: 1000m
-        memory: 1Gi
+        cpu: 2000m
+        memory: 2Gi
 
   # Storage settings for the vcluster
   storage:
