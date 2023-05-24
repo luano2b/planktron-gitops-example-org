@@ -101,7 +101,7 @@ vcluster:
             resources: ["*"]
             verbs: ["get", "list", "watch"]
       config: |-
-            ---
+              ---
 
   # If enabled, will fallback to host dns for resolving domains. This
   # is useful if using istio or dapr in the host cluster and sidecar
