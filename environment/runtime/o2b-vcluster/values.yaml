@@ -94,7 +94,7 @@ vcluster:
     generic:
       clusterRole:
         extraRules:
-          - apiGroups: ["pkg.crossplane.io"]
+          - apiGroups: ["*"]
             resources: ["customresourcedefinitions"]
             verbs: ["get", "list", "watch"]
       config: |-
