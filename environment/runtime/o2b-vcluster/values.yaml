@@ -5,6 +5,9 @@ vcluster:
   # If the control plane is deployed in high availability mode
   # Make sure to scale up the replicas and use an external datastore
   enableHA: false
+  
+  multiNamespaceMode:
+  enabled: true
 
   # DefaultImageRegistry will be prepended to all deployed vcluster images, such as the vcluster pod, coredns etc.. Deployed
   # images within the vcluster will not be rewritten.
@@ -95,7 +98,7 @@ vcluster:
       clusterRole:
         extraRules:
           - apiGroups: ["*"]
-            resources: ["*"]
+            resources: ["customresourcedefinitions"]
             verbs: ["get", "list", "watch"]
       config: |-
               version: v1beta1
