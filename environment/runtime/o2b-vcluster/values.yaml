@@ -95,7 +95,7 @@ vcluster:
       clusterRole:
         extraRules:
           - apiGroups: ["*"]
-            resources: ["customresourcedefinitions"]
+            resources: ["*"]
             verbs: ["get", "list", "watch"]
       config: |-
         version: v1beta1
