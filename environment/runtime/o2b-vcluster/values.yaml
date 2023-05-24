@@ -101,11 +101,11 @@ vcluster:
             resources: ["*"]
             verbs: ["get", "list", "watch"]
       config: |-
-              version: v1beta1
-              import:
-              - kind: Provider
-                apiVersion: pkg.crossplane.io
-            ---
+        version: v1beta1
+        import:
+          - kind: Provider
+            apiVersion: pkg.crossplane.io
+      ---
 
   # If enabled, will fallback to host dns for resolving domains. This
   # is useful if using istio or dapr in the host cluster and sidecar
