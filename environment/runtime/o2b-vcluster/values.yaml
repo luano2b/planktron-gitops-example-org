@@ -187,7 +187,7 @@ vcluster:
         memory: 16Gi
       requests:
         cpu: 2000m
-        memory: 16Gi
+        memory: 2Gi
 
   # Storage settings for the vcluster
   storage:
