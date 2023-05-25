@@ -75,7 +75,7 @@ crossplane:
   resourcesRBACManager:
     limits:
       cpu: 400m
-      memory: 1500Mi
+      memory: 2Gi
     requests:
       cpu: 200m
       memory: 256Mi
