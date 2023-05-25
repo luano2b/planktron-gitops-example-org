@@ -31,9 +31,9 @@ vcluster:
       enabled: true
     configmaps:
       enabled: true
-      all: true
+      all: false
     secrets:
-      all: true
+      all: false
       enabled: true
     endpoints:
       enabled: true
