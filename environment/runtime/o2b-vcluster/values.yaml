@@ -1,7 +1,7 @@
 vcluster:
   # These annotations will be applied to all objects created in this chart
   globalAnnotations: {}
-  
+
   # If the control plane is deployed in high availability mode
   # Make sure to scale up the replicas and use an external datastore
   enableHA: false
@@ -93,7 +93,7 @@ vcluster:
     # generic CRD configuration
     generic:
       config: |-
-              ---
+        ---
 
   # If enabled, will fallback to host dns for resolving domains. This
   # is useful if using istio or dapr in the host cluster and sidecar
@@ -184,9 +184,9 @@ vcluster:
     env: []
     resources:
       limits:
-        memory: 16Gi
+        memory: 12Gi
       requests:
-        cpu: 2000m
+        cpu: 200m
         memory: 2Gi
 
   # Storage settings for the vcluster
